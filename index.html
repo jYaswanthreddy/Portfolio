@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="J Yaswanth Reddy's Portfolio - Aspiring Data Scientist showcasing projects and skills." />
+  <meta name="keywords" content="portfolio, data science, LegalBERT, Diabetes Prediction, C++, C, Python, EDA" />
+  <title>My Portfolio - J Yaswanth Reddy</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!-- AOS Animation Library CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Hacker Mode CSS -->
+  <link rel="stylesheet" href="hacker-mode.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow" aria-label="Main Navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-code me-2"></i>J Yaswanth Reddy
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user me-1"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-tools me-1"></i>Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram me-1"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="btn btn-outline-light ms-3" aria-label="Toggle Theme Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section d-flex align-items-center">
+    <div class="container text-center text-white" data-aos="fade-up">
+      <div class="hero-content">
+        <h1 class="display-3 mb-4">
+          <span class="typing-text">Hi, I'm J Yaswanth Reddy</span>
+        </h1>
+        <p class="lead mb-4">
+          <i class="fas fa-chart-line me-2"></i>
+          Aspiring Data Scientist & Machine Learning Enthusiast
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-paper-plane me-2"></i>Get In Touch
+          </a>
+          <a href="#projects" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-eye me-2"></i>View My Work
+          </a>
+        </div>
+        <div class="hero-stats mt-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="row justify-content-center">
+            <div class="col-md-3 col-6 text-center">
+              <div class="stat-item">
+                <h3 class="text-white mb-0">7.5</h3>
+                <p class="text-white-50 mb-0">CGPA</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 text-center">
+              <div class="stat-item">
+                <h3 class="text-white mb-0">3+</h3>
+                <p class="text-white-50 mb-0">Projects</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 text-center">
+              <div class="stat-item">
+                <h3 class="text-white mb-0">4+</h3>
+                <p class="text-white-50 mb-0">Skills</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 text-center">
+              <div class="stat-item">
+                <h3 class="text-white mb-0">2026</h3>
+                <p class="text-white-50 mb-0">Graduation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container" data-aos="fade-right">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="profile-container">
+              <img
+                src="images/placeholder.svg"
+                alt="Profile Picture of J Yaswanth Reddy"
+                class="img-fluid rounded-circle mb-3 profile-img"
+                width="250"
+                height="250"
+              />
+              <div class="profile-badge">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="about-content">
+              <p class="lead mb-4">
+                I am an aspiring Data Scientist with a passion for uncovering insights from data and building intelligent solutions.
+              </p>
+              <p class="mb-4">
+                Currently pursuing my degree with a CGPA of 7.5 and expecting to graduate in 2026, I continuously work on improving my skills and taking on projects that challenge me to apply data science techniques in real-world scenarios.
+              </p>
+              <div class="about-features">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="feature-item">
+                      <i class="fas fa-brain text-primary me-2"></i>
+                      <span>Machine Learning</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="feature-item">
+                      <i class="fas fa-database text-primary me-2"></i>
+                      <span>Data Analysis</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="feature-item">
+                      <i class="fas fa-code text-primary me-2"></i>
+                      <span>Programming</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="feature-item">
+                      <i class="fas fa-chart-bar text-primary me-2"></i>
+                      <span>Visualization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+      <div class="container" data-aos="fade-left">
+        <h2 class="text-center mb-5">Skills & Technologies</h2>
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <figure class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-cpp fa-3x mb-3"></i>
+              </div>
+              <figcaption>C++ Programming</figcaption>
+              <div class="skill-level">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <span>85%</span>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <figure class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code fa-3x mb-3"></i>
+              </div>
+              <figcaption>C Programming</figcaption>
+              <div class="skill-level">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+                <span>80%</span>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <figure class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-python fa-3x mb-3"></i>
+              </div>
+              <figcaption>Python</figcaption>
+              <div class="skill-level">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span>90%</span>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <figure class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-chart-bar fa-3x mb-3"></i>
+              </div>
+              <figcaption>Data Analysis</figcaption>
+              <div class="skill-level">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+                <span>88%</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+        
+        <!-- Additional Skills -->
+        <div class="additional-skills mt-5" data-aos="fade-up">
+          <h3 class="text-center mb-4">Additional Skills</h3>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="skills-tags">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Natural Language Processing</span>
+                <span class="skill-tag">Statistical Analysis</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Jupyter Notebooks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+      <div class="container" data-aos="fade-right">
+        <h2 class="text-center mb-5">Certifications</h2>
+        <div class="row justify-content-center">
+          <!-- DSA Certificate -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm certification-card">
+              <img src="images/DSA.png" class="card-img-top" alt="DSA Certificate">
+              <div class="card-body">
+                <h5 class="card-title">Data Structures & Algorithms (DSA)</h5>
+                <p class="card-text">
+                  Mastered core data structures and algorithms including Arrays, Linked Lists, Stacks, Queues, Trees, Binary Search Trees, and Sliding Window techniques. This certification demonstrates my ability to solve complex computational problems efficiently and lays a strong foundation for advanced programming and technical interviews.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- OOPs Certificate -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm certification-card">
+              <img src="images/OOPs.png" class="card-img-top" alt="OOPs Certificate">
+              <div class="card-body">
+                <h5 class="card-title">Object Oriented Programming (OOPs)</h5>
+                <p class="card-text">
+                  Gained expertise in OOP concepts such as Encapsulation, Inheritance, Polymorphism, and Abstraction. Developed skills in designing robust software using Classes, Objects, Method Overloading, and Overriding, enabling the creation of scalable and maintainable codebases.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Python Certificate -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm certification-card">
+              <img src="images/Python.png" class="card-img-top" alt="Python Certificate">
+              <div class="card-body">
+                <h5 class="card-title">Python Programming</h5>
+                <p class="card-text">
+                  Certified in Python fundamentals, covering Data Types, Control Flow, Functions, Modules, and Comprehensions. This certification highlights my proficiency in writing clean, efficient, and versatile Python code for a variety of applications, from scripting to data analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Scaler EDA Certificate -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm certification-card">
+              <img src="images/Scaler EDA.png" class="card-img-top" alt="Scaler EDA Certificate">
+              <div class="card-body">
+                <h5 class="card-title">Scaler EDA & Data Visualization</h5>
+                <p class="card-text">
+                  Completed Scaler's EDA & Data Visualization course, focusing on exploratory data analysis and effective visualization techniques. Learned to extract insights from data, create compelling visual stories, and communicate findings clearly to stakeholders using modern data science tools.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="text-center mb-5">Featured Projects</h2>
+        <div class="row">
+          <!-- LegalBERT Model Project -->
+          <article class="col-lg-6 mb-4">
+            <div class="card project-card h-100">
+              <div class="project-image-container">
+                <img
+                  src="images/placeholder.svg"
+                  class="card-img-top"
+                  alt="LegalBERT Model Project"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="btn btn-light btn-sm me-2" target="_blank" rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://colab.research.google.com/drive/1kg6dDUKS0kGJoH5IqbntwcyY13Z8d5ky?usp=sharing" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="project-header">
+                  <h5 class="card-title">LegalBERT Model</h5>
+                  <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">NLP</span>
+                  </div>
+                </div>
+                <p class="card-text">
+                  The LegalBERT model is designed to predict case outcomes based on the facts presented in legal documents.
+                  Leveraging advanced natural language processing and a BERT-based architecture, this project analyzes case details,
+                  extracts relevant features, and forecasts the likely outcome of legal cases.
+                </p>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>BERT-based architecture</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Legal document analysis</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Case outcome prediction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Diabetes Prediction Project -->
+          <article class="col-lg-6 mb-4">
+            <div class="card project-card h-100">
+              <div class="project-image-container">
+                <img
+                  src="images/placeholder.svg"
+                  class="card-img-top"
+                  alt="Diabetes Prediction Project"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="btn btn-light btn-sm me-2" target="_blank" rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://colab.research.google.com/drive/1ClV5hXX_AWmTh1XNzP7Tt4LQwHI4ZEsU?usp=sharing" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="project-header">
+                  <h5 class="card-title">Diabetes Prediction</h5>
+                  <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Healthcare</span>
+                  </div>
+                </div>
+                <p class="card-text">
+                  A machine learning project aimed at predicting diabetes using various health metrics.
+                  This project focuses on data preprocessing, model building, and validation to ensure accurate predictions.
+                </p>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Health metrics analysis</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Machine learning models</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Data validation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <!-- View More Projects Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="#" class="btn btn-outline-primary btn-lg">
+            <i class="fas fa-folder-open me-2"></i>View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark py-5 text-white">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5">Get In Touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-info-simple text-center">
+              <div class="mb-4">
+                <i class="fas fa-envelope fa-2x mb-2 text-primary"></i>
+                <h5>Email</h5>
+                <p>
+                  <a href="mailto:juturuyaswanthreddyreddy@gmail.com" class="text-white" style="word-break: break-all;">
+                    juturuyaswanthreddyreddy@gmail.com
+                  </a>
+                </p>
+              </div>
+              <div class="mb-4">
+                <i class="fab fa-linkedin fa-2x mb-2 text-primary"></i>
+                <h5>LinkedIn</h5>
+                <p>
+                  <a href="https://www.linkedin.com/in/yaswanthreddyjuturu" class="text-white" target="_blank" rel="noopener">
+                    linkedin.com/in/yaswanthreddyjuturu
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-secondary text-white text-center">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand mb-3">
+          <h4 class="mb-2">J Yaswanth Reddy</h4>
+          <p class="text-white-50">Aspiring Data Scientist</p>
+        </div>
+        <div class="social-links mb-3">
+          <a href="https://www.linkedin.com/in/yaswanthreddyjuturu" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:juturuyaswanthreddyreddy@gmail.com" class="social-link" target="_blank" rel="noopener" aria-label="Email">
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <p class="mb-0">&copy; 2025 J Yaswanth Reddy. All rights reserved.</p>
+          <p class="text-white-50 small mb-0">Made with <i class="fas fa-heart text-danger"></i> for Data Science</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- AOS Animation Library JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+
+      // Theme toggle (Light -> Dark -> Hacker -> Light)
+      const themeToggle = document.getElementById('theme-toggle');
+      let currentTheme = 'light'; // light, dark, hacker
+      
+      themeToggle.addEventListener('click', function() {
+        const icon = themeToggle.querySelector('i');
+        
+        // Remove all theme classes
+        document.body.classList.remove('dark-mode', 'hacker-mode');
+        
+        // Cycle through themes
+        if (currentTheme === 'light') {
+          document.body.classList.add('dark-mode');
+          currentTheme = 'dark';
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else if (currentTheme === 'dark') {
+          document.body.classList.add('hacker-mode');
+          currentTheme = 'hacker';
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-terminal');
+        } else {
+          currentTheme = 'light';
+          icon.classList.remove('fa-terminal');
+          icon.classList.add('fa-moon');
+        }
+      });
+
+      // Back-to-top button visibility
+      const backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Form submission handling
+      const contactForm = document.querySelector('.contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Add your form submission logic here
+          alert('Thank you for your message! I will get back to you soon.');
+          this.reset();
+        });
+      }
+
+      // Typing animation for hero text
+      const typingText = document.querySelector('.typing-text');
+      if (typingText) {
+        const text = typingText.textContent;
+        typingText.textContent = '';
+        let i = 0;
+        const typeWriter = () => {
+          if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        };
+        setTimeout(typeWriter, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
