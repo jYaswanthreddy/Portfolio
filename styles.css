@@ -192,6 +192,7 @@ body.hacker-mode .navbar-brand {
 }
 
 .navbar-nav .nav-link {
+  color: var(--text-color-dark) !important;
   font-weight: 500;
   margin: 0 1rem;
   padding: 0.5rem 1rem !important;
@@ -368,16 +369,16 @@ body.hacker-mode .stat-item p {
 }
 
 .btn-outline-light {
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  color: white;
-  transition: all 0.3s ease;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  background: transparent;
+  border: 2px solid var(--primary-color) !important;
 }
 
 .btn-outline-light:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
-  color: white;
-  transform: translateY(-2px);
+  background: var(--primary-gradient) !important;
+  color: #fff !important;
+  border-color: var(--primary-color) !important;
 }
 
 body.hacker-mode .btn-outline-light {
@@ -950,8 +951,8 @@ body.hacker-mode .btn-primary:hover {
 }
 
 .btn-outline-primary {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
   background: transparent;
 }
 
@@ -962,16 +963,9 @@ body.hacker-mode .btn-outline-primary {
 }
 
 .btn-outline-primary:hover {
-  background: var(--primary-gradient);
-  border-color: transparent;
-  color: white;
-  transform: translateY(-2px);
-}
-
-body.hacker-mode .btn-outline-primary:hover {
-  background: var(--primary-color);
-  color: black;
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+  background: var(--primary-gradient) !important;
+  color: #fff !important;
+  border-color: var(--primary-color) !important;
 }
 
 /* --- Contact Form --- */
@@ -1490,4 +1484,14 @@ body.hacker-mode .certification-card .card-title {
 }
 body.hacker-mode .certification-card .card-text {
   color: var(--text-color-light);
+}
+
+/* --- FIX: Project card text contrast in dark mode --- */
+body.dark-mode .project-card .card-title,
+body.dark-mode .project-card .card-text {
+  color: var(--text-color-light) !important;
+}
+
+body.dark-mode .certification-card {
+  background: var(--light-color);
 }
