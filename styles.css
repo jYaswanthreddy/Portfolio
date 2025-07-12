@@ -1,3 +1,35 @@
+/* --- Project Section Readability Fixes for Dark and Hacker Modes --- */
+body.dark-mode .project-description,
+body.dark-mode .project-card .card-text,
+body.dark-mode .project-card ul,
+body.dark-mode .project-card li,
+body.dark-mode .project-card .feature,
+body.dark-mode .project-card .project-features,
+body.dark-mode .project-card .tech-tag,
+body.dark-mode .project-card a,
+body.dark-mode .project-card .card-title {
+  color: #fff !important;
+  background: none !important;
+  text-shadow: 0 1px 4px #000;
+}
+body.hacker-mode .project-description,
+body.hacker-mode .project-card .card-text,
+body.hacker-mode .project-card ul,
+body.hacker-mode .project-card li,
+body.hacker-mode .project-card .feature,
+body.hacker-mode .project-card .project-features,
+body.hacker-mode .project-card .tech-tag,
+body.hacker-mode .project-card a,
+body.hacker-mode .project-card .card-title {
+  color: #baffc9 !important;
+  background: none !important;
+  text-shadow: 0 0 2px #00ff41, 0 0 8px #00ff41;
+}
+body.dark-mode .project-card a:hover,
+body.hacker-mode .project-card a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
 /* --- CSS Variables (Default - Light Mode) --- */
 :root {
   --primary-color: #667eea;
