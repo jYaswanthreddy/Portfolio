@@ -20,10 +20,32 @@ body.hacker-mode .project-card .feature,
 body.hacker-mode .project-card .project-features,
 body.hacker-mode .project-card .tech-tag,
 body.hacker-mode .project-card a,
-body.hacker-mode .project-card .card-title {
-  color: #baffc9 !important;
+body.hacker-mode .project-card .card-title,
+body.hacker-mode .project-card,
+body.hacker-mode .project-card .card-text,
+body.hacker-mode .project-card .card-title,
+body.hacker-mode .project-card .tech-tag,
+body.hacker-mode .project-card .feature,
+body.hacker-mode .project-card .project-features,
+body.hacker-mode .project-card ul,
+body.hacker-mode .project-card li {
+  color: #00ff41 !important;
   background: none !important;
   text-shadow: 0 0 2px #00ff41, 0 0 8px #00ff41;
+}
+body.hacker-mode .project-card .card-text,
+body.hacker-mode .project-card .card-title,
+body.hacker-mode .project-card .tech-tag,
+body.hacker-mode .project-card .feature,
+body.hacker-mode .project-card .project-features,
+body.hacker-mode .project-card ul,
+body.hacker-mode .project-card li {
+  color: #00ff41 !important;
+}
+body.hacker-mode .project-card .card-text,
+body.hacker-mode .project-card .card-title {
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 body.dark-mode .project-card a:hover,
 body.hacker-mode .project-card a:hover {
