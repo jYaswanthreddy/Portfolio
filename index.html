@@ -183,7 +183,7 @@
           <div class="col-lg-3 col-md-6 mb-4">
             <figure class="skill-card">
               <div class="skill-icon">
-                <i class="fab fa-cpp fa-3x mb-3"></i>
+                <i class="fas fa-code fa-3x mb-3"></i>
               </div>
               <figcaption>C++ Programming</figcaption>
               <div class="skill-level">
@@ -351,9 +351,14 @@
                   </div>
                 </div>
                 <p class="card-text">
-                  The LegalBERT model is designed to predict case outcomes based on the facts presented in legal documents.
-                  Leveraging advanced natural language processing and a BERT-based architecture, this project analyzes case details,
-                  extracts relevant features, and forecasts the likely outcome of legal cases.
+                  LegalBERT is an advanced legal analytics project that predicts case outcomes by combining deep learning and structured data. The model processes the 'facts' column from legal case documents using a BERT-based transformer to generate contextual embeddings, which are then merged with other case features. The workflow includes:
+                  <ul>
+                    <li>Comprehensive data preprocessing and handling of missing values</li>
+                    <li>Extraction of BERT embeddings for legal text</li>
+                    <li>Feature engineering and integration with structured data</li>
+                    <li>Model training and evaluation using Logistic Regression, Random Forest, SVM, XGBoost, and Neural Networks</li>
+                  </ul>
+                  The project demonstrates the power of transformer models in the legal domain, achieving robust performance in predicting whether the first party wins a case. It highlights the importance of combining textual and tabular data for real-world legal analytics and provides a reproducible pipeline for future legal AI applications.
                 </p>
                 <div class="project-features">
                   <div class="feature">
@@ -373,8 +378,8 @@
             </div>
           </article>
           
-          <!-- Diabetes Prediction Project -->
-          <article class="col-lg-6 mb-4">
+          <!-- Diabetes Prediction Project (hidden by default, shown on 'View All Projects') -->
+          <article class="col-lg-6 mb-4 d-none" id="diabetes-project">
             <div class="card project-card h-100">
               <div class="project-image-container">
                 <img
@@ -403,8 +408,16 @@
                   </div>
                 </div>
                 <p class="card-text">
-                  A machine learning project aimed at predicting diabetes using various health metrics.
-                  This project focuses on data preprocessing, model building, and validation to ensure accurate predictions.
+                  This end-to-end machine learning project predicts diabetes using a variety of health metrics, including pregnancies, glucose, blood pressure, skin thickness, insulin, BMI, diabetes pedigree function, and age. The workflow covers:
+                  <ul>
+                    <li>Thorough data cleaning, outlier removal, and handling of missing values</li>
+                    <li>Exploratory data analysis and insightful visualizations to understand feature impact</li>
+                    <li>Feature scaling, normalization, and encoding of categorical variables</li>
+                    <li>Implementation and benchmarking of multiple classifiers: K-Nearest Neighbors, Logistic Regression, Decision Tree, SVM, Random Forest, AdaBoost, Gradient Boosting, and Naive Bayes</li>
+                    <li>Comprehensive model evaluation, accuracy comparison, and confusion matrix analysis</li>
+                    <li>Interactive prediction function for user input</li>
+                  </ul>
+                  The project demonstrates the full data science pipeline from raw data to actionable health predictions, with GradientBoostingClassifier achieving the highest accuracy. It provides practical insights for healthcare analytics and model interpretability.
                 </p>
                 <div class="project-features">
                   <div class="feature">
@@ -423,14 +436,104 @@
               </div>
             </div>
           </article>
+
+          <!-- Ad Click Prediction for AdWave Media Project -->
+          <article class="col-lg-6 mb-4">
+            <div class="card project-card h-100">
+              <div class="project-image-container">
+                <img
+                  src="images/placeholder.svg"
+                  class="card-img-top"
+                  alt="Ad Click Prediction for AdWave Media"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/jYaswanthreddy/AdClick_Prediction" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
+                      <i class="fab fa-github"></i> GitHub Repo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="project-header">
+                  <h5 class="card-title">Ad Click Prediction for AdWave Media</h5>
+                  <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Classification</span>
+                  </div>
+                </div>
+                <p class="card-text">
+                  This project aims to predict whether a user will click on an online advertisement using real-world data from AdWave Media. The workflow includes data cleaning, feature engineering, encoding categorical variables, and training multiple machine learning models to optimize click-through rate (CTR) prediction.
+                </p>
+                <ul class="mb-3">
+                  <li><strong>Business Value:</strong> Enables targeted ad placement, improves campaign ROI, and helps marketers optimize ad strategies by predicting user engagement.</li>
+                  <li><strong>ML Workflow:</strong> Data preprocessing, exploratory analysis, label/ordinal encoding, model training (Logistic Regression, SVM, Decision Tree, Random Forest, AdaBoost, GradientBoosting, KNN, Naive Bayes), and performance comparison.</li>
+                  <li><strong>Best Result:</strong> <span class="text-success">GradientBoostingClassifier</span> achieved <strong>90% accuracy</strong> on the test set, outperforming all other models.</li>
+                </ul>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Comprehensive EDA & feature encoding</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Multiple ML models benchmarked</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Business insights for ad optimization</span>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/jYaswanthreddy/AdClick_Prediction" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+                    <i class="fab fa-github me-1"></i>View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
         
-        <!-- View More Projects Button -->
+        <!-- View More/Less Projects Buttons -->
         <div class="text-center mt-5" data-aos="fade-up">
-          <a href="#" class="btn btn-outline-primary btn-lg">
+          <a href="#" class="btn btn-outline-primary btn-lg" id="view-all-projects-btn">
             <i class="fas fa-folder-open me-2"></i>View All Projects
           </a>
+          <a href="#" class="btn btn-outline-secondary btn-lg d-none mt-3" id="view-less-projects-btn">
+            <i class="fas fa-folder-minus me-2"></i>View Less Projects
+          </a>
         </div>
+
+    <script>
+      // Show/hide Diabetes Prediction project on 'View All Projects'/'View Less Projects' click
+      document.addEventListener('DOMContentLoaded', function() {
+        var viewAllBtn = document.getElementById('view-all-projects-btn');
+        var viewLessBtn = document.getElementById('view-less-projects-btn');
+        var diabetesProject = document.getElementById('diabetes-project');
+        if (viewAllBtn && viewLessBtn && diabetesProject) {
+          viewAllBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            diabetesProject.classList.remove('d-none');
+            viewAllBtn.style.display = 'none';
+            viewLessBtn.classList.remove('d-none');
+            // Optionally scroll to the revealed project
+            diabetesProject.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+          viewLessBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            diabetesProject.classList.add('d-none');
+            viewAllBtn.style.display = '';
+            viewLessBtn.classList.add('d-none');
+            // Optionally scroll to the top of the projects section
+            var projectsSection = document.getElementById('projects');
+            if (projectsSection) {
+              projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        }
+      });
+    </script>
       </div>
     </section>
 
