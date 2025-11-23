@@ -45,7 +45,8 @@ Portfolio/
    ```
 
 ## 🌐 Live Demo
-
+click on this link to view the portfolio.
+https://jyaswanthreddy.github.io/Portfolio/
 ## 📸 Screenshots
 
 ## 📬 Contact
