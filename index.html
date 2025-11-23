@@ -1,698 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="J Yaswanth Reddy's Portfolio - Aspiring Data Scientist showcasing projects and skills." />
-  <meta name="keywords" content="portfolio, data science, LegalBERT, Diabetes Prediction, C++, C, Python, EDA" />
-  <title>My Portfolio - J Yaswanth Reddy</title>
+  <meta name="description"
+    content="J Yaswanth Reddy's Portfolio - Aspiring Data Scientist showcasing projects and skills." />
+  <title>J Yaswanth Reddy | Data Scientist</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Bootstrap CSS -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome for Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-  <!-- AOS Animation Library CSS -->
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Hacker Mode CSS -->
-  <link rel="stylesheet" href="hacker-mode.css" />
-</head>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="J Yaswanth Reddy's Portfolio - Aspiring Data Scientist showcasing projects and skills." />
+    <title>J Yaswanth Reddy | Data Scientist</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow" aria-label="Main Navigation">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        <i class="fas fa-code me-2"></i>J Yaswanth Reddy
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user me-1"></i>About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-tools me-1"></i>Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram me-1"></i>Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
-        </ul>
-        <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" class="btn btn-outline-light ms-3" aria-label="Toggle Theme Mode">
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
-    </div>
+
+  <!-- Floating Dock Navigation -->
+  <nav class="dock-nav">
+    <ul class="dock-list">
+      <li><a href="#home" class="dock-item" aria-label="Home"><i class="fas fa-home"></i></a></li>
+      <li><a href="#about" class="dock-item" aria-label="About"><i class="fas fa-user"></i></a></li>
+      <li><a href="#projects" class="dock-item" aria-label="Projects"><i class="fas fa-layer-group"></i></a></li>
+      <li><a href="#contact" class="dock-item" aria-label="Contact"><i class="fas fa-paper-plane"></i></a></li>
+      <li><button id="theme-toggle" class="dock-item" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+      </li>
+    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="hero-section d-flex align-items-center">
-    <div class="container text-center text-white" data-aos="fade-up">
-      <div class="hero-content">
-        <h1 class="display-3 mb-4">
-          <span class="typing-text">Hi, I'm J Yaswanth Reddy</span>
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+      <canvas id="particles-canvas"></canvas>
+      <div class="hero-content" data-aos="fade-up">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to Work
+        </div>
+        <h1 class="hero-title">
+          Building Intelligence <br> from <span class="gradient-text">Data</span>
         </h1>
-        <p class="lead mb-4">
-          <i class="fas fa-chart-line me-2"></i>
-          Aspiring Data Scientist & Machine Learning Enthusiast
+        <p class="hero-subtitle">
+          Hi, I'm <strong>J Yaswanth Reddy</strong>. I build <span class="typing-text"></span><span
+            class="cursor">|</span>
         </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary btn-lg me-3">
-            <i class="fas fa-paper-plane me-2"></i>Get In Touch
-          </a>
-          <a href="#projects" class="btn btn-outline-light btn-lg">
-            <i class="fas fa-eye me-2"></i>View My Work
-          </a>
-        </div>
-        <div class="hero-stats mt-5" data-aos="fade-up" data-aos-delay="300">
-          <div class="row justify-content-center">
-            <div class="col-md-3 col-6 text-center">
-              <div class="stat-item">
-                <h3 class="text-white mb-0">7.53</h3>
-                <p class="text-white-50 mb-0">CGPA</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 text-center">
-              <div class="stat-item">
-                <h3 class="text-white mb-0">3+</h3>
-                <p class="text-white-50 mb-0">Projects</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 text-center">
-              <div class="stat-item">
-                <h3 class="text-white mb-0">4+</h3>
-                <p class="text-white-50 mb-0">Skills</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 text-center">
-              <div class="stat-item">
-                <h3 class="text-white mb-0">2026</h3>
-                <p class="text-white-50 mb-0">Graduation</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-      <div class="scroll-arrow"></div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container" data-aos="fade-right">
-        <h2 class="text-center mb-5">About Me</h2>
-        <div class="row align-items-center">
-          <div class="col-lg-4 text-center mb-4 mb-lg-0">
-            <div class="profile-container">
-              <img
-                src="images/placeholder.svg"
-                alt="Profile Picture of J Yaswanth Reddy"
-                class="img-fluid rounded-circle mb-3 profile-img"
-                width="250"
-                height="250"
-              />
-              <div class="profile-badge">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Student</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="about-content">
-              <p class="lead mb-4">
-                I am an aspiring Data Scientist with a passion for uncovering insights from data and building intelligent solutions.
-              </p>
-              <p class="mb-4">
-                Currently pursuing my degree with a CGPA of 7.5 and expecting to graduate in 2026, I continuously work on improving my skills and taking on projects that challenge me to apply data science techniques in real-world scenarios.
-              </p>
-              <div class="about-features">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <div class="feature-item">
-                      <i class="fas fa-brain text-primary me-2"></i>
-                      <span>Machine Learning</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="feature-item">
-                      <i class="fas fa-database text-primary me-2"></i>
-                      <span>Data Analysis</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="feature-item">
-                      <i class="fas fa-code text-primary me-2"></i>
-                      <span>Programming</span>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="feature-item">
-                      <i class="fas fa-chart-bar text-primary me-2"></i>
-                      <span>Visualization</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Bento Grid Layout -->
+    <section class="bento-grid">
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-      <div class="container" data-aos="fade-left">
-        <h2 class="text-center mb-5">Skills & Technologies</h2>
-        <div class="row text-center">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <figure class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-code fa-3x mb-3"></i>
-              </div>
-              <figcaption>C++ Programming</figcaption>
-              <div class="skill-level">
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%"></div>
-                </div>
-                <span>85%</span>
-              </div>
-            </figure>
+      <!-- Profile Card (Large) -->
+      <div class="bento-card profile-card" data-aos="fade-up" id="about">
+        <div class="card-content">
+          <div class="profile-header">
+            <img src="images/placeholder.svg" alt="J Yaswanth Reddy" class="profile-avatar">
+            <div>
+              <h3>J Yaswanth Reddy</h3>
+              <p class="text-muted">Student & Developer</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <figure class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-code fa-3x mb-3"></i>
-              </div>
-              <figcaption>C Programming</figcaption>
-              <div class="skill-level">
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%"></div>
-                </div>
-                <span>80%</span>
-              </div>
-            </figure>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <figure class="skill-card">
-              <div class="skill-icon">
-                <i class="fab fa-python fa-3x mb-3"></i>
-              </div>
-              <figcaption>Python</figcaption>
-              <div class="skill-level">
-                <div class="progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-                <span>90%</span>
-              </div>
-            </figure>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <figure class="skill-card">
-              <div class="skill-icon">
-                <i class="fas fa-chart-bar fa-3x mb-3"></i>
-              </div>
-              <figcaption>Data Analysis</figcaption>
-              <div class="skill-level">
-                <div class="progress">
-                  <div class="progress-bar" style="width: 88%"></div>
-                </div>
-                <span>88%</span>
-              </div>
-            </figure>
-          </div>
-        </div>
-        
-        <!-- Additional Skills -->
-        <div class="additional-skills mt-5" data-aos="fade-up">
-          <h3 class="text-center mb-4">Additional Skills</h3>
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="skills-tags">
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Deep Learning</span>
-                <span class="skill-tag">Natural Language Processing</span>
-                <span class="skill-tag">Statistical Analysis</span>
-                <span class="skill-tag">Data Visualization</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Jupyter Notebooks</span>
-              </div>
+          <p class="bio-text">
+            Passionate about uncovering insights from data. Currently pursuing my degree with a <strong>7.53
+              CGPA</strong> (Graduating 2026). I specialize in building ML models and solving complex algorithmic
+            problems.
+          </p>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">DSA</span>
+              <span class="stat-label">Proficient</span>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Tech Stack Cards (Small) -->
+      <div class="bento-card skill-card python" data-aos="fade-up" data-aos-delay="100">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+      <div class="bento-card skill-card cpp" data-aos="fade-up" data-aos-delay="150">
+        <i class="fas fa-code"></i>
+        <span>C++</span>
+      </div>
+      <div class="bento-card skill-card ml" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-brain"></i>
+        <span>ML/AI</span>
+      </div>
+      <div class="bento-card skill-card data" data-aos="fade-up" data-aos-delay="250">
+        <i class="fas fa-database"></i>
+        <span>Data</span>
+      </div>
+
+      <!-- Quote Card -->
+      <div class="bento-card quote-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <p>"Data is the new oil. It's valuable, but if unrefined it cannot really be used."</p>
+        <span class="quote-author">- Clive Humby</span>
+      </div>
+
+      <!-- Featured Project 1 (Wide) -->
+      <div class="bento-card project-card wide" id="projects" data-aos="fade-up">
+        <div class="card-content">
+          <div class="project-badge">Featured</div>
+          <h3>Conversational AI</h3>
+          <p>Emotion-Aware Chatbot using RoBERTa & LLMs.</p>
+          <div class="tags">
+            <span>Python</span><span>LLM</span><span>NLP</span>
+          </div>
+          <a href="https://github.com/jYaswanthreddy/Conversational-AI-Chatbot-Utilizing-BERT-Based-Emotion-Recognition"
+            target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="project-bg-icon"><i class="fas fa-comments"></i></div>
+      </div>
+
+      <!-- Featured Project 2 -->
+      <div class="bento-card project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-content">
+          <h3>LegalBERT Model</h3>
+          <p>Predicting legal case outcomes with Deep Learning.</p>
+          <div class="tags">
+            <span>BERT</span><span>NLP</span>
+          </div>
+          <a href="https://github.com/jYaswanthreddy/LegalBERT/tree/main" target="_blank" class="project-link"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Featured Project 3 -->
+      <div class="bento-card project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-content">
+          <h3>Diabetes Prediction</h3>
+          <p>End-to-end ML pipeline for health analytics.</p>
+          <div class="tags">
+            <span>ML</span><span>Healthcare</span>
+          </div>
+          <a href="https://colab.research.google.com/drive/1ClV5hXX_AWmTh1XNzP7Tt4LQwHI4ZEsU?usp=sharing"
+            target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- Featured Project 4 -->
+      <div class="bento-card project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-content">
+          <h3>Ad Click Prediction</h3>
+          <p>Optimizing CTR with Gradient Boosting (90% Acc).</p>
+          <div class="tags">
+            <span>ML</span><span>Business</span>
+          </div>
+          <a href="https://github.com/jYaswanthreddy/AdClick_Prediction" target="_blank" class="project-link"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <a href="https://www.linkedin.com/in/yaswanthreddyjuturu" target="_blank" class="bento-card social-card linkedin"
+        data-aos="fade-up" id="contact">
+        <i class="fab fa-linkedin-in"></i>
+        <span>Connect</span>
+      </a>
+
+      <!-- Contact Form Card -->
+      <div class="bento-card contact-form-card" data-aos="fade-up">
+        <h3>Get in Touch</h3>
+        <form class="contact-form" action="mailto:juturuyaswanthreddyreddy@gmail.com" method="post"
+          enctype="text/plain">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" rows="3" required></textarea>
+          <button type="submit" class="btn-send">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Certifications List (Tall) -->
+      <a href="#certifications" class="bento-card certs-card" data-aos="fade-up">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li><i class="fas fa-certificate"></i> Data Structures & Algorithms</li>
+          <li><i class="fas fa-certificate"></i> Python Programming</li>
+          <li><i class="fas fa-certificate"></i> OOPs Concepts</li>
+          <li><i class="fas fa-certificate"></i> Scaler EDA & Viz</li>
+        </ul>
+        <div class="click-hint"><i class="fas fa-arrow-down"></i> View Certificates</div>
+      </a>
+
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="py-5">
-      <div class="container" data-aos="fade-right">
-        <h2 class="text-center mb-5">Certifications</h2>
-        <div class="row justify-content-center">
-          <!-- DSA Certificate -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 shadow-sm certification-card">
-              <img src="images/DSA.png" class="card-img-top" alt="DSA Certificate">
-              <div class="card-body">
-                <h5 class="card-title">Data Structures & Algorithms (DSA)</h5>
-                <p class="card-text project-description">
-                  Mastered core data structures and algorithms including Arrays, Linked Lists, Stacks, Queues, Trees, Binary Search Trees, and Sliding Window techniques. This certification demonstrates my ability to solve complex computational problems efficiently and lays a strong foundation for advanced programming and technical interviews.
-                </p>
-              </div>
-            </div>
+    <section id="certifications" class="cert-section">
+      <h2 class="section-title" data-aos="fade-up">Certifications & Achievements</h2>
+      <div class="cert-grid">
+        <!-- DSA -->
+        <div class="cert-card" data-aos="fade-up">
+          <div class="cert-img-wrapper">
+            <img src="images/DSA.png" alt="Data Structures & Algorithms Certificate">
           </div>
-          <!-- OOPs Certificate -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 shadow-sm certification-card">
-              <img src="images/OOPs.png" class="card-img-top" alt="OOPs Certificate">
-              <div class="card-body">
-                <h5 class="card-title">Object Oriented Programming (OOPs)</h5>
-                <p class="card-text">
-                  Gained expertise in OOP concepts such as Encapsulation, Inheritance, Polymorphism, and Abstraction. Developed skills in designing robust software using Classes, Objects, Method Overloading, and Overriding, enabling the creation of scalable and maintainable codebases.
-                </p>
-              </div>
-            </div>
+          <div class="cert-info">
+            <h4>Data Structures & Algorithms</h4>
+            <p>Mastered core data structures and algorithms including Arrays, Linked Lists, Trees, and Graphs.</p>
           </div>
-          <!-- Python Certificate -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 shadow-sm certification-card">
-              <img src="images/Python.png" class="card-img-top" alt="Python Certificate">
-              <div class="card-body">
-                <h5 class="card-title">Python Programming</h5>
-                <p class="card-text">
-                  Certified in Python fundamentals, covering Data Types, Control Flow, Functions, Modules, and Comprehensions. This certification highlights my proficiency in writing clean, efficient, and versatile Python code for a variety of applications, from scripting to data analysis.
-                </p>
-              </div>
-            </div>
+        </div>
+        <!-- OOPs -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-img-wrapper">
+            <img src="images/OOPs.png" alt="OOPs Certificate">
           </div>
-          <!-- Scaler EDA Certificate -->
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 shadow-sm certification-card">
-              <img src="images/Scaler EDA.png" class="card-img-top" alt="Scaler EDA Certificate">
-              <div class="card-body">
-                <h5 class="card-title">Scaler EDA & Data Visualization</h5>
-                <p class="card-text">
-                  Completed Scaler's EDA & Data Visualization course, focusing on exploratory data analysis and effective visualization techniques. Learned to extract insights from data, create compelling visual stories, and communicate findings clearly to stakeholders using modern data science tools.
-                </p>
-              </div>
-            </div>
+          <div class="cert-info">
+            <h4>Object Oriented Programming</h4>
+            <p>Expertise in Encapsulation, Inheritance, Polymorphism, and Abstraction.</p>
+          </div>
+        </div>
+        <!-- Python -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-img-wrapper">
+            <img src="images/Python.png" alt="Python Certificate">
+          </div>
+          <div class="cert-info">
+            <h4>Python Programming</h4>
+            <p>Certified in Python fundamentals, Control Flow, Functions, and Modules.</p>
+          </div>
+        </div>
+        <!-- Scaler EDA -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-img-wrapper">
+            <img src="images/Scaler EDA.png" alt="Scaler EDA Certificate">
+          </div>
+          <div class="cert-info">
+            <h4>Scaler EDA & Visualization</h4>
+            <p>Exploratory data analysis and effective visualization techniques.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <div class="container" data-aos="zoom-in">
-        <h2 class="text-center mb-5">Featured Projects</h2>
-        <div class="row">
-          <!-- LegalBERT Model Project -->
-          <article class="col-lg-6 mb-4">
-            <div class="card project-card h-100">
-              <div class="project-image-container">
-                <img
-                  src="images/placeholder.svg"
-                  class="card-img-top"
-                  alt="LegalBERT Model Project"
-                />
-                <div class="project-overlay">
-                  <div class="project-links">
-                    <a href="#" class="btn btn-light btn-sm me-2" target="_blank" rel="noopener">
-                      <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                    <a href="https://colab.research.google.com/drive/1kg6dDUKS0kGJoH5IqbntwcyY13Z8d5ky?usp=sharing" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
-                      <i class="fab fa-github"></i> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="project-header">
-                  <h5 class="card-title">LegalBERT Model</h5>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">BERT</span>
-                    <span class="tech-tag">NLP</span>
-                  </div>
-                </div>
-                <p class="card-text">
-                  LegalBERT is an advanced legal analytics project that predicts case outcomes by combining deep learning and structured data. The model processes the 'facts' column from legal case documents using a BERT-based transformer to generate contextual embeddings, which are then merged with other case features. The workflow includes:
-                  <ul>
-                    <li>Comprehensive data preprocessing and handling of missing values</li>
-                    <li>Extraction of BERT embeddings for legal text</li>
-                    <li>Feature engineering and integration with structured data</li>
-                    <li>Model training and evaluation using Logistic Regression, Random Forest, SVM, XGBoost, and Neural Networks</li>
-                  </ul>
-                  The project demonstrates the power of transformer models in the legal domain, achieving robust performance in predicting whether the first party wins a case. It highlights the importance of combining textual and tabular data for real-world legal analytics and provides a reproducible pipeline for future legal AI applications.
-                </p>
-                <div class="project-features">
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>BERT-based architecture</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Legal document analysis</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Case outcome prediction</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          
-          <!-- Diabetes Prediction Project (hidden by default, shown on 'View All Projects') -->
-          <article class="col-lg-6 mb-4 d-none" id="diabetes-project">
-            <div class="card project-card h-100">
-              <div class="project-image-container">
-                <img
-                  src="images/placeholder.svg"
-                  class="card-img-top"
-                  alt="Diabetes Prediction Project"
-                />
-                <div class="project-overlay">
-                  <div class="project-links">
-                    <a href="#" class="btn btn-light btn-sm me-2" target="_blank" rel="noopener">
-                      <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                    <a href="https://colab.research.google.com/drive/1ClV5hXX_AWmTh1XNzP7Tt4LQwHI4ZEsU?usp=sharing" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
-                      <i class="fab fa-github"></i> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="project-header">
-                  <h5 class="card-title">Diabetes Prediction</h5>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Healthcare</span>
-                  </div>
-                </div>
-                <p class="card-text">
-                  This end-to-end machine learning project predicts diabetes using a variety of health metrics, including pregnancies, glucose, blood pressure, skin thickness, insulin, BMI, diabetes pedigree function, and age. The workflow covers:
-                  <ul>
-                    <li>Thorough data cleaning, outlier removal, and handling of missing values</li>
-                    <li>Exploratory data analysis and insightful visualizations to understand feature impact</li>
-                    <li>Feature scaling, normalization, and encoding of categorical variables</li>
-                    <li>Implementation and benchmarking of multiple classifiers: K-Nearest Neighbors, Logistic Regression, Decision Tree, SVM, Random Forest, AdaBoost, Gradient Boosting, and Naive Bayes</li>
-                    <li>Comprehensive model evaluation, accuracy comparison, and confusion matrix analysis</li>
-                    <li>Interactive prediction function for user input</li>
-                  </ul>
-                  The project demonstrates the full data science pipeline from raw data to actionable health predictions, with GradientBoostingClassifier achieving the highest accuracy. It provides practical insights for healthcare analytics and model interpretability.
-                </p>
-                <div class="project-features">
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Health metrics analysis</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Machine learning models</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Data validation</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Ad Click Prediction for AdWave Media Project -->
-          <article class="col-lg-6 mb-4">
-            <div class="card project-card h-100">
-              <div class="project-image-container">
-                <img
-                  src="images/placeholder.svg"
-                  class="card-img-top"
-                  alt="Ad Click Prediction for AdWave Media"
-                />
-                <div class="project-overlay">
-                  <div class="project-links">
-                    <a href="https://github.com/jYaswanthreddy/AdClick_Prediction" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">
-                      <i class="fab fa-github"></i> GitHub Repo
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="project-header">
-                  <h5 class="card-title">Ad Click Prediction for AdWave Media</h5>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Classification</span>
-                  </div>
-                </div>
-                <p class="card-text">
-                  This project aims to predict whether a user will click on an online advertisement using real-world data from AdWave Media. The workflow includes data cleaning, feature engineering, encoding categorical variables, and training multiple machine learning models to optimize click-through rate (CTR) prediction.
-                </p>
-                <ul class="mb-3">
-                  <li><strong>Business Value:</strong> Enables targeted ad placement, improves campaign ROI, and helps marketers optimize ad strategies by predicting user engagement.</li>
-                  <li><strong>ML Workflow:</strong> Data preprocessing, exploratory analysis, label/ordinal encoding, model training (Logistic Regression, SVM, Decision Tree, Random Forest, AdaBoost, GradientBoosting, KNN, Naive Bayes), and performance comparison.</li>
-                  <li><strong>Best Result:</strong> <span class="text-success">GradientBoostingClassifier</span> achieved <strong>90% accuracy</strong> on the test set, outperforming all other models.</li>
-                </ul>
-                <div class="project-features">
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Comprehensive EDA & feature encoding</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Multiple ML models benchmarked</span>
-                  </div>
-                  <div class="feature">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <span>Business insights for ad optimization</span>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <a href="https://github.com/jYaswanthreddy/AdClick_Prediction" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
-                    <i class="fab fa-github me-1"></i>View on GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        
-        <!-- View More/Less Projects Buttons -->
-        <div class="text-center mt-5" data-aos="fade-up">
-          <a href="#" class="btn btn-outline-primary btn-lg" id="view-all-projects-btn">
-            <i class="fas fa-folder-open me-2"></i>View All Projects
-          </a>
-          <a href="#" class="btn btn-outline-secondary btn-lg d-none mt-3" id="view-less-projects-btn">
-            <i class="fas fa-folder-minus me-2"></i>View Less Projects
-          </a>
-        </div>
-
-    <script>
-      // Show/hide Diabetes Prediction project on 'View All Projects'/'View Less Projects' click
-      document.addEventListener('DOMContentLoaded', function() {
-        var viewAllBtn = document.getElementById('view-all-projects-btn');
-        var viewLessBtn = document.getElementById('view-less-projects-btn');
-        var diabetesProject = document.getElementById('diabetes-project');
-        if (viewAllBtn && viewLessBtn && diabetesProject) {
-          viewAllBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            diabetesProject.classList.remove('d-none');
-            viewAllBtn.style.display = 'none';
-            viewLessBtn.classList.remove('d-none');
-            // Optionally scroll to the revealed project
-            diabetesProject.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          });
-          viewLessBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            diabetesProject.classList.add('d-none');
-            viewAllBtn.style.display = '';
-            viewLessBtn.classList.add('d-none');
-            // Optionally scroll to the top of the projects section
-            var projectsSection = document.getElementById('projects');
-            if (projectsSection) {
-              projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          });
-        }
-      });
-    </script>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-dark py-5 text-white">
-      <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5">Get In Touch</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="contact-info-simple text-center">
-              <div class="mb-4">
-                <i class="fas fa-envelope fa-2x mb-2 text-primary"></i>
-                <h5>Email</h5>
-                <p>
-                  <a href="mailto:juturuyaswanthreddyreddy@gmail.com" class="text-white" style="word-break: break-all;">
-                    juturuyaswanthreddyreddy@gmail.com
-                  </a>
-                </p>
-              </div>
-              <div class="mb-4">
-                <i class="fab fa-linkedin fa-2x mb-2 text-primary"></i>
-                <h5>LinkedIn</h5>
-                <p>
-                  <a href="https://www.linkedin.com/in/yaswanthreddyjuturu" class="text-white" target="_blank" rel="noopener">
-                    linkedin.com/in/yaswanthreddyjuturu
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer class="main-footer">
+      <p>&copy; 2025 J Yaswanth Reddy. Crafted with <i class="fas fa-heart"></i></p>
+      <p class="text-muted small mt-2">Email: juturuyaswanthreddyreddy@gmail.com</p>
+    </footer>
   </main>
 
-  <!-- Back to Top Button -->
-  <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-
-  <!-- Footer -->
-  <footer class="py-4 bg-secondary text-white text-center">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand mb-3">
-          <h4 class="mb-2">J Yaswanth Reddy</h4>
-          <p class="text-white-50">Aspiring Data Scientist</p>
-        </div>
-        <div class="social-links mb-3">
-          <a href="https://www.linkedin.com/in/yaswanthreddyjuturu" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
-          <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
-          <a href="mailto:juturuyaswanthreddyreddy@gmail.com" class="social-link" target="_blank" rel="noopener" aria-label="Email">
-            <i class="fas fa-envelope fa-lg"></i>
-          </a>
-        </div>
-        <div class="footer-bottom">
-          <p class="mb-0">&copy; 2025 J Yaswanth Reddy. All rights reserved.</p>
-          <p class="text-white-50 small mb-0">Made with <i class="fas fa-heart text-danger"></i> for Data Science</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle JS (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-  <!-- AOS Animation Library JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Initialize AOS animations
-      AOS.init({
-        duration: 800,
-        once: true,
-        offset: 100
-      });
+    AOS.init({ duration: 800, once: true });
 
-      // Theme toggle (Light -> Dark -> Hacker -> Light)
-      const themeToggle = document.getElementById('theme-toggle');
-      let currentTheme = 'light'; // light, dark, hacker
-      
-      themeToggle.addEventListener('click', function() {
-        const icon = themeToggle.querySelector('i');
-        
-        // Remove all theme classes
-        document.body.classList.remove('dark-mode', 'hacker-mode');
-        
-        // Cycle through themes
-        if (currentTheme === 'light') {
-          document.body.classList.add('dark-mode');
-          currentTheme = 'dark';
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-        } else if (currentTheme === 'dark') {
-          document.body.classList.add('hacker-mode');
-          currentTheme = 'hacker';
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-terminal');
-        } else {
-          currentTheme = 'light';
-          icon.classList.remove('fa-terminal');
-          icon.classList.add('fa-moon');
-        }
-      });
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
 
-      // Back-to-top button visibility
-      const backToTop = document.getElementById('back-to-top');
-      window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-          backToTop.classList.add('visible');
-        } else {
-          backToTop.classList.remove('visible');
-        }
-      });
-
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
-        });
-      });
-
-      // Form submission handling
-      const contactForm = document.querySelector('.contact-form');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          // Add your form submission logic here
-          alert('Thank you for your message! I will get back to you soon.');
-          this.reset();
-        });
-      }
-
-      // Typing animation for hero text
-      const typingText = document.querySelector('.typing-text');
-      if (typingText) {
-        const text = typingText.textContent;
-        typingText.textContent = '';
-        let i = 0;
-        const typeWriter = () => {
-          if (i < text.length) {
-            typingText.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-          }
-        };
-        setTimeout(typeWriter, 1000);
+    themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        body.classList.add('dark-mode');
+        icon.classList.replace('fa-moon', 'fa-sun');
       }
     });
+
+    // Typing Animation
+    const textElement = document.querySelector('.typing-text');
+    const texts = ["Intelligent Solutions.", "Robust Models.", "Scalable Systems."];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      textElement.textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2000); // Pause at end
+      } else {
+        setTimeout(type, 100);
+      }
+    })();
+
+    // Particle Network
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particlesArray;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.directionX = (Math.random() * 1) - 0.5;
+        this.directionY = (Math.random() * 1) - 0.5;
+        this.size = (Math.random() * 2) + 1;
+      }
+      update() {
+        if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+        if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+        this.x += this.directionX;
+        this.y += this.directionY;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-muted');
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      particlesArray = [];
+      let numberOfParticles = (canvas.height * canvas.width) / 15000;
+      for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+      }
+      connect();
+    }
+
+    function connect() {
+      let opacityValue = 1;
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+          if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+            opacityValue = 1 - (distance / 20000);
+            ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--text-muted');
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      init();
+    });
+
+    init();
+    animate();
   </script>
 </body>
+
 </html>
