@@ -43,15 +43,10 @@ Portfolio/
    git clone https://github.com/jYaswanthreddy/Portfolio.git
    cd Portfolio
    ```
-2. **Open `index.html` in your browser:**
-   - No build step is required. All dependencies are loaded via CDN.
-   - For best experience, use the latest version of Chrome, Firefox, or Edge.
 
 ## 🌐 Live Demo
-You can deploy this portfolio using GitHub Pages or any static site hosting service. (If you want help with deployment, let me know!)
 
 ## 📸 Screenshots
-_Add screenshots here if desired._
 
 ## 📬 Contact
 - **Email:** [juturuyaswanthreddyreddy@gmail.com](mailto:juturuyaswanthreddyreddy@gmail.com)
